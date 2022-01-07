@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getCoinsData() {
-      fetch(`https://api.coinranking.com/v1/public/coins`)
+      fetch(`https://api.coinranking.com/v2/public/coins`)
         .then((response) => response.json())
         .then((json) => (this.coinsData = json.data.coins));
     },
