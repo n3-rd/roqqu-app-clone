@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     getCoinsData() {
-      fetch(`https://api.coinranking.com/v1/public/coins`)
+      fetch(`https://n3rdy-cors-proxy.glitch.me/useproxy?link=https://api.coinranking.com/v2/coins`)
         .then((response) => response.json())
         .then((json) => (this.coinsData = json.data.coins));
     },
